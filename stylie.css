@@ -33,7 +33,12 @@ html{
     line-height: 1.9;
     font-weight: 500;
     margin-block: 2rem;
+   opacity: 0;
+}
 
+.container .wrapp-box p.box{
+    opacity: 1;
+    transition: opacity 0.3s;
 }
 
 .container .wrapp-box .btn{

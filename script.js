@@ -1,11 +1,16 @@
 let jokes=document.querySelector(".joke")
 let btn = document.querySelector(".btn")
-let api="https://hindi-jokes-api.onrender.com"
+let api='https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit'
 
-function randomJokes(){
-   let datas= fetch(api).then((res)=>res.json()).then((data)=>data.json())
-   console.log(datas);
+let randomJokes=()=>{
+   fetch(api).then((res)=>res.json())
+   .then((data)=>{
+   console.log( jokes.textContent=`${data.joke}`);
+   
+})
+
    
 }
 
+btn.addEventListener(("click"),randomJokes)
 randomJokes()
