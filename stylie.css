@@ -21,6 +21,7 @@ html{
     max-width: 450px;
     background-color: #A8CD89;
     padding:2rem;
+    border-radius: 0.5rem;
 }
 
 .container .wrapp-box span{
@@ -31,6 +32,8 @@ html{
     font-size: 1.8rem;
     line-height: 1.9;
     font-weight: 500;
+    margin-block: 2rem;
+
 }
 
 .container .wrapp-box .btn{
@@ -42,5 +45,4 @@ html{
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-    margin-top: 2rem;
 }
